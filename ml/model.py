@@ -23,6 +23,7 @@ def train_model(X_train, y_train):
     # TODO: implement the function
     model = LogisticRegression()
     model.fit(X_train, y_train)
+
     return model
 
 
@@ -63,7 +64,10 @@ def inference(model, X):
         Predictions from the model.
     """
     # TODO: implement the function
-    pass
+    pred = model.predict(X)
+
+    return pred
+    
 
 def save_model(model, path):
     """ Serializes model to a file.
