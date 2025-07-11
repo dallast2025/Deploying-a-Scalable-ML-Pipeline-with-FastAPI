@@ -64,9 +64,9 @@ def inference(model, X):
         Predictions from the model.
     """
     # TODO: implement the function
-    pred = model.predict(X)
+    preds = model.predict(X)
 
-    return pred
+    return preds
     
 
 def save_model(model, path):
