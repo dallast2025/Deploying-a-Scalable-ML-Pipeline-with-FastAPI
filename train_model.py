@@ -83,6 +83,13 @@ for col in cat_features:
     for slicevalue in sorted(test[col].unique()):
         count = test[test[col] == slicevalue].shape[0]
         p, r, fb = performance_on_categorical_slice(
+            test,
+            column_name=col,
+            slice_value=slicevalue,
+            categorical_features=cat_features,
+            label="salary",
+            lb=lb,
+            model=model
             # your code here
             # use test, col and slicevalue as part of the input
         )
