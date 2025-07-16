@@ -56,6 +56,6 @@ def test_three_datasize_datatype():
 
     assert isinstance(X_train,np.ndarray), f"X_train was expected to be a numpy array, but got {type(X_train)}"
     assert isinstance(X_test,np.ndarray), f"X_test was expected to be a numpy array, but got {type(X_test)}"
+    assert isinstance(y_train,np.ndarray), f"y_train was expected to be a numpy array, but got {type(y_train)}"
+    assert isinstance(y_test,np.ndarray), f"y_test was expected to be a numpy array, but got {type(y_test)}"
 
-
-    pass
