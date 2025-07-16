@@ -46,8 +46,16 @@ def test_three_datasize_datatype():
     This test is to check if the training and test datasets have the expected size and data type.
     """
     # Your code here
+    #checking for size
     assert X_train.shape == (3,2), f"X_train shape was expected to be (3,2), but got {X_train.shape}"
     assert X_test.shape == (2,2), f"X_test shape was expected to be (2,2), but got {X_test.shape}"
-    assert y_train.shape == (3,), f"y_train shape was expected to be (3,), but got {y_train.shape}
-    assert
+    assert y_train.shape == (3,), f"y_train shape was expected to be (3,), but got {y_train.shape}"
+    assert y_test.shape == (2,), f"y_test shape was expected to be (2,), but got {y_test.shape}"
+
+    #checking for data type
+
+    assert isinstance(X_train,np.ndarray), f"X_train was expected to be a numpy array, but got {type(X_train)}"
+    assert isinstance(X_test,np.ndarray), f"X_test was expected to be a numpy array, but got {type(X_test)}"
+
+
     pass
