@@ -1,11 +1,15 @@
 import pytest
+import numpy as np
 from ml.model import train_model
 from sklearn.linear_model import LogisticRegression
 
 # TODO: add necessary import
 
+X_train =np.array([[1,2],[2,3],[3,4]])
+y_train = np.array([0,1,0])
+
 # TODO: implement the first test. Change the function name and input as needed
-def test_one():
+def test_one_trainmodel():
     """
     This test is to check if Logistic Regression model is used.
     """
@@ -13,7 +17,7 @@ def test_one():
     model=train_model(X_train, y_train)
 
     assert isinstance(model, LogisticRegression), f"{type(model)} is invalid. Please enter LogisticRegression Model."
-    
+
 
 
 # TODO: implement the second test. Change the function name and input as needed
