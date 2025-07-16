@@ -41,9 +41,13 @@ def test_two_compute_model_metrics_float():
 
 
 # TODO: implement the third test. Change the function name and input as needed
-def test_three():
+def test_three_datasize_datatype():
     """
-    # add description for the third test
+    This test is to check if the training and test datasets have the expected size and data type.
     """
     # Your code here
+    assert X_train.shape == (3,2), f"X_train shape was expected to be (3,2), but got {X_train.shape}"
+    assert X_test.shape == (2,2), f"X_test shape was expected to be (2,2), but got {X_test.shape}"
+    assert y_train.shape == (3,), f"y_train shape was expected to be (3,), but got {y_train.shape}
+    assert
     pass
