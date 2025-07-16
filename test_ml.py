@@ -25,7 +25,7 @@ def test_one_trainmodel():
 # TODO: implement the second test. Change the function name and input as needed
 def test_two_compute_model_metrics_float():
     """
-    This test is to check if the compute_model_metrics is returned as a valid float type for precision, recall, and F1 scores.
+    This test is to check if the compute_model_metrics is returned as a valid float type for precision, recall, and F-beta score.
     """
     # Your code here
     model = train_model(X_train, y_train)
@@ -53,7 +53,6 @@ def test_three_datasize_datatype():
     assert y_test.shape == (2,), f"y_test shape was expected to be (2,), but got {y_test.shape}"
 
     #checking for data type
-
     assert isinstance(X_train,np.ndarray), f"X_train was expected to be a numpy array, but got {type(X_train)}"
     assert isinstance(X_test,np.ndarray), f"X_test was expected to be a numpy array, but got {type(X_test)}"
     assert isinstance(y_train,np.ndarray), f"y_train was expected to be a numpy array, but got {type(y_train)}"
