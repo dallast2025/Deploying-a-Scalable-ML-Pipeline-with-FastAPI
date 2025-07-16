@@ -28,12 +28,14 @@ def test_two_compute_model_metrics_float():
     This test is to check if the compute_model_metrics is returned as a valid float type for precision, recall, and F1 scores.
     """
     # Your code here
-    model = tr
+    model = train_model(X_train, y_train)
+    y_pred = model.predict(X_test)
+
     precision, recall, fbeta = compute_model_metrics(y_test, y_pred)
 
-    assert isinstance(precision,float)
-    assert isinstance(recall,float)
-    assert isinstance(fbeta,float)
+    assert isinstance(precision,float), "Invalid float type please make sure precision is a float"
+    assert isinstance(recall,float), "Invalid float type please make sure recall is a float"
+    assert isinstance(fbeta,float), "Invalid float type please make sure F1 scores is a float"
 
 
 
