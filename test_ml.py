@@ -1,12 +1,14 @@
 import pytest
 import numpy as np
-from ml.model import train_model
+from ml.model import train_model, compute_model_metrics
 from sklearn.linear_model import LogisticRegression
 
 # TODO: add necessary import
 
-X_train =np.array([[1,2],[2,3],[3,4]])
-y_train = np.array([0,1,0])
+X_train =np.array([[1,2],[2,3],[3,4]]) #Train Features Example
+y_train = np.array([0,1,0]) #Example labels for training
+X_test = np.array ([[4,5],[5,6]]) # Test features examples.
+y_test = np.array([1,0])
 
 # TODO: implement the first test. Change the function name and input as needed
 def test_one_trainmodel():
@@ -21,12 +23,19 @@ def test_one_trainmodel():
 
 
 # TODO: implement the second test. Change the function name and input as needed
-def test_two():
+def test_two_compute_model_metrics_float():
     """
-    # add description for the second test
+    This test is to check if the compute_model_metrics is returned as a valid float type for precision, recall, and F1 scores.
     """
     # Your code here
-    pass
+    model = tr
+    precision, recall, fbeta = compute_model_metrics(y_test, y_pred)
+
+    assert isinstance(precision,float)
+    assert isinstance(recall,float)
+    assert isinstance(fbeta,float)
+
+
 
 
 # TODO: implement the third test. Change the function name and input as needed
