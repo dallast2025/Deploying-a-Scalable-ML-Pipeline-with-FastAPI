@@ -36,4 +36,4 @@ Since this dataset is publicly available, it does not contain sensitive informat
 
 ## Caveats and Recommendations
 
-A caveat regarding this dataset is that the census data is from 1994; this data is outdated and no longer accurate in light of today's factors. It is recommended that an updated census dataset be used for a more accurate prediction based on today's society.
+A caveat regarding this dataset is that the census data is from 1994; this data is outdated and no longer accurate in light of today's factors. It is recommended that an updated census dataset be used for a more accurate prediction based on today's society
