@@ -4,7 +4,7 @@ For additional information see the Model Card paper: https://arxiv.org/pdf/1810.
 
 ## Model Details
 
--Model developed by: Moises Diaz
+-Model developed by: M.D
 -Model created date: 07-17-25
 -Model Version: 1.0.0
 -Model type: Classification Model using Logistic Regression
